@@ -1,7 +1,7 @@
 # Research Hub Index
 
 > Auto-generated for Codex and human readers  
-> Generated: 2026-03-02 16:14:33
+> Generated: 2026-03-02 16:15:36
 
 ## Quick Stats
 
