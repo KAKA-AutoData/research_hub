@@ -20,11 +20,6 @@
     "reason": "HTTP 403"
   },
   {
-    "name": "DeepMind",
-    "url": "https://deepmind.google/research",
-    "reason": "<urlopen error _ssl.c:990: The handshake operation"
-  },
-  {
     "name": "Ensembl",
     "url": "https://ensembl.org",
     "reason": "HTTP 403"

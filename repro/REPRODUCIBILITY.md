@@ -1,13 +1,13 @@
 # Reproducibility Analysis Report
 
-Generated: 2026-03-02T16:20:54.568736
+Generated: 2026-03-02T16:23:44.460905
 
 ## Summary
 
 | Barrier Level | Count |
 |--------------|-------|
 | Low (Easy to reproduce) | 9 |
-| Medium (Some effort required) | 1 |
+| Medium (Some effort required) | 2 |
 | High (Significant barriers) | 1 |
 | Unknown | 10 |
 
@@ -28,6 +28,13 @@ Generated: 2026-03-02T16:20:54.568736
 - Data Public: Check paper
 - Run Barrier: Medium-High
 - Risks: Academic code may be unmaintained, Data access varies by study
+
+**DeepMind**
+- URL: https://deepmind.google/research
+- Code Available: Varies
+- Data Public: Varies
+- Run Barrier: Medium
+- Risks: Corporate research, partial code release
 
 **Distill.pub**
 - URL: https://distill.pub
