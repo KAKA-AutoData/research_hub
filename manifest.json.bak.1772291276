@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-02-28T23:03:08.642492",
+  "total_sources": 21,
+  "topics": [
+    "deep_learning",
+    "bioinformatics",
+    "computational_theory"
+  ],
+  "topic_counts": {
+    "deep_learning": 6,
+    "bioinformatics": 7,
+    "computational_theory": 8
+  },
+  "files": {
+    "raw_data": "sources/raw_fetched.json",
+    "enriched_data": "sources/enriched_sources.json",
+    "sources_markdown": "sources/SOURCES.md",
+    "repro_report": "repro/REPRODUCIBILITY.md",
+    "index": "INDEX.md",
+    "manifest": "manifest.json"
+  }
+}

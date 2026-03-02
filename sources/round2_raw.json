@@ -1,0 +1,377 @@
+{
+  "deep_learning": [
+    {
+      "title": "PyTorch Lightning",
+      "url": "https://lightning.ai",
+      "source": "Lightning AI",
+      "tags": [
+        "framework",
+        "pytorch"
+      ],
+      "date": "2026-02-28T23:09:22.630023",
+      "short_summary": "Lightning AI - framework, pytorch",
+      "accessibility": {
+        "accessible": true,
+        "status": 200,
+        "attempts": 1
+      }
+    },
+    {
+      "title": "Keras Documentation",
+      "url": "https://keras.io",
+      "source": "Google",
+      "tags": [
+        "framework",
+        "tensorflow"
+      ],
+      "date": "2026-02-28T23:09:41.023350",
+      "short_summary": "Google - framework, tensorflow",
+      "accessibility": {
+        "accessible": true,
+        "status": 200,
+        "attempts": 2
+      }
+    },
+    {
+      "title": "JAX Documentation",
+      "url": "https://jax.readthedocs.io",
+      "source": "Google",
+      "tags": [
+        "framework",
+        "autodiff"
+      ],
+      "date": "2026-02-28T23:09:44.242732",
+      "short_summary": "Google - framework, autodiff",
+      "accessibility": {
+        "accessible": true,
+        "status": 200,
+        "attempts": 1
+      }
+    },
+    {
+      "title": "NeurIPS Proceedings",
+      "url": "https://neurips.cc/virtual/2024/papers.html",
+      "source": "NeurIPS",
+      "tags": [
+        "conference",
+        "papers"
+      ],
+      "date": "2026-02-28T23:10:28.788552",
+      "short_summary": "NeurIPS - conference, papers",
+      "accessibility": {
+        "accessible": true,
+        "status": 200,
+        "attempts": 1
+      }
+    },
+    {
+      "title": "ICML OpenReview",
+      "url": "https://openreview.net/group?id=ICML.cc",
+      "source": "OpenReview",
+      "tags": [
+        "conference",
+        "peer-review"
+      ],
+      "date": "2026-02-28T23:10:29.998809",
+      "short_summary": "OpenReview - conference, peer-review",
+      "accessibility": {
+        "accessible": true,
+        "status": 200,
+        "attempts": 1
+      }
+    },
+    {
+      "title": "Stanford CS231n",
+      "url": "http://cs231n.stanford.edu",
+      "source": "Stanford",
+      "tags": [
+        "course",
+        "cv"
+      ],
+      "date": "2026-02-28T23:10:31.755105",
+      "short_summary": "Stanford - course, cv",
+      "accessibility": {
+        "accessible": true,
+        "status": 200,
+        "attempts": 1
+      }
+    },
+    {
+      "title": "Berkeley CS285",
+      "url": "http://rail.eecs.berkeley.edu/deeprlcourse",
+      "source": "UC Berkeley",
+      "tags": [
+        "course",
+        "rl"
+      ],
+      "date": "2026-02-28T23:10:34.368564",
+      "short_summary": "UC Berkeley - course, rl",
+      "accessibility": {
+        "accessible": true,
+        "status": 200,
+        "attempts": 1
+      }
+    }
+  ],
+  "bioinformatics": [
+    {
+      "title": "GENCODE",
+      "url": "https://www.gencodegenes.org",
+      "source": "GENCODE",
+      "tags": [
+        "genome",
+        "annotation"
+      ],
+      "date": "2026-02-28T23:10:54.622492",
+      "short_summary": "GENCODE - genome, annotation",
+      "accessibility": {
+        "accessible": true,
+        "status": 200,
+        "attempts": 1
+      }
+    },
+    {
+      "title": "UCSC Genome Browser",
+      "url": "https://genome.ucsc.edu",
+      "source": "UCSC",
+      "tags": [
+        "browser",
+        "visualization"
+      ],
+      "date": "2026-02-28T23:10:56.409356",
+      "short_summary": "UCSC - browser, visualization",
+      "accessibility": {
+        "accessible": true,
+        "status": 200,
+        "attempts": 1
+      }
+    },
+    {
+      "title": "GTEx Portal",
+      "url": "https://gtexportal.org",
+      "source": "Broad Institute",
+      "tags": [
+        "database",
+        "expression"
+      ],
+      "date": "2026-02-28T23:11:26.402856",
+      "short_summary": "Broad Institute - database, expression",
+      "accessibility": {
+        "accessible": true,
+        "status": 200,
+        "attempts": 1
+      }
+    },
+    {
+      "title": "AlphaFold DB",
+      "url": "https://alphafold.ebi.ac.uk",
+      "source": "DeepMind/EMBL-EBI",
+      "tags": [
+        "structure",
+        "protein"
+      ],
+      "date": "2026-02-28T23:11:28.745176",
+      "short_summary": "DeepMind/EMBL-EBI - structure, protein",
+      "accessibility": {
+        "accessible": true,
+        "status": 200,
+        "attempts": 1
+      }
+    },
+    {
+      "title": "Pfam",
+      "url": "https://pfam.xfam.org",
+      "source": "EMBL-EBI",
+      "tags": [
+        "database",
+        "protein-family"
+      ],
+      "date": "2026-02-28T23:11:29.723099",
+      "short_summary": "EMBL-EBI - database, protein-family",
+      "accessibility": {
+        "accessible": true,
+        "status": 200,
+        "attempts": 1
+      }
+    },
+    {
+      "title": "KEGG Pathway",
+      "url": "https://www.genome.jp/kegg/pathway.html",
+      "source": "Kyoto University",
+      "tags": [
+        "pathway",
+        "metabolism"
+      ],
+      "date": "2026-02-28T23:11:33.559812",
+      "short_summary": "Kyoto University - pathway, metabolism",
+      "accessibility": {
+        "accessible": true,
+        "status": 200,
+        "attempts": 1
+      }
+    },
+    {
+      "title": "Scanpy",
+      "url": "https://scanpy.readthedocs.io",
+      "source": "Theis Lab",
+      "tags": [
+        "tool",
+        "single-cell",
+        "python"
+      ],
+      "date": "2026-02-28T23:11:58.270824",
+      "short_summary": "Theis Lab - tool, single-cell, python",
+      "accessibility": {
+        "accessible": true,
+        "status": 200,
+        "attempts": 1
+      }
+    }
+  ],
+  "computational_theory": [
+    {
+      "title": "Lean Prover",
+      "url": "https://leanprover.github.io",
+      "source": "Microsoft/CMU",
+      "tags": [
+        "prover",
+        "theorem"
+      ],
+      "date": "2026-02-28T23:11:59.303408",
+      "short_summary": "Microsoft/CMU - prover, theorem",
+      "accessibility": {
+        "accessible": true,
+        "status": 200,
+        "attempts": 1
+      }
+    },
+    {
+      "title": "Agda",
+      "url": "https://wiki.portal.chalmers.se/agda/pmwiki.php",
+      "source": "Chalmers",
+      "tags": [
+        "language",
+        "dependent-types"
+      ],
+      "date": "2026-02-28T23:12:01.658736",
+      "short_summary": "Chalmers - language, dependent-types",
+      "accessibility": {
+        "accessible": true,
+        "status": 200,
+        "attempts": 1
+      }
+    },
+    {
+      "title": "Idris",
+      "url": "https://www.idris-lang.org",
+      "source": "University of St Andrews",
+      "tags": [
+        "language",
+        "dependent-types"
+      ],
+      "date": "2026-02-28T23:12:03.897694",
+      "short_summary": "University of St Andrews - language, dependent-types",
+      "accessibility": {
+        "accessible": true,
+        "status": 200,
+        "attempts": 1
+      }
+    },
+    {
+      "title": "TLA+",
+      "url": "https://lamport.azurewebsites.net/tla/tla.html",
+      "source": "Microsoft/Lamport",
+      "tags": [
+        "specification",
+        "verification"
+      ],
+      "date": "2026-02-28T23:12:06.162467",
+      "short_summary": "Microsoft/Lamport - specification, verification",
+      "accessibility": {
+        "accessible": true,
+        "status": 200,
+        "attempts": 1
+      }
+    },
+    {
+      "title": "Z3 Theorem Prover",
+      "url": "https://github.com/Z3Prover/z3",
+      "source": "Microsoft",
+      "tags": [
+        "smt",
+        "solver"
+      ],
+      "date": "2026-02-28T23:12:09.322594",
+      "short_summary": "Microsoft - smt, solver",
+      "accessibility": {
+        "accessible": true,
+        "status": 200,
+        "attempts": 1
+      }
+    },
+    {
+      "title": "SMT-LIB",
+      "url": "https://smtlib.cs.uiowa.edu",
+      "source": "Iowa",
+      "tags": [
+        "standard",
+        "smt"
+      ],
+      "date": "2026-02-28T23:12:13.860048",
+      "short_summary": "Iowa - standard, smt",
+      "accessibility": {
+        "accessible": true,
+        "status": 200,
+        "attempts": 1
+      }
+    },
+    {
+      "title": "CVC5",
+      "url": "https://cvc5.github.io",
+      "source": "Stanford/Iowa",
+      "tags": [
+        "solver",
+        "smt"
+      ],
+      "date": "2026-02-28T23:12:14.633309",
+      "short_summary": "Stanford/Iowa - solver, smt",
+      "accessibility": {
+        "accessible": true,
+        "status": 200,
+        "attempts": 1
+      }
+    },
+    {
+      "title": "CompCert",
+      "url": "http://compcert.inria.fr",
+      "source": "INRIA",
+      "tags": [
+        "compiler",
+        "verified"
+      ],
+      "date": "2026-02-28T23:12:44.957496",
+      "short_summary": "INRIA - compiler, verified",
+      "accessibility": {
+        "accessible": true,
+        "status": 200,
+        "attempts": 2
+      }
+    },
+    {
+      "title": "VST (Verified Software Toolchain)",
+      "url": "https://vst.cs.princeton.edu",
+      "source": "Princeton",
+      "tags": [
+        "verification",
+        "c"
+      ],
+      "date": "2026-02-28T23:12:46.377301",
+      "short_summary": "Princeton - verification, c",
+      "accessibility": {
+        "accessible": true,
+        "status": 200,
+        "attempts": 1
+      }
+    }
+  ]
+}

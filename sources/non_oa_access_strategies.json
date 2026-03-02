@@ -1,0 +1,221 @@
+{
+  "version": "1.0.0",
+  "date_created": "2026-02-28T23:34:00+08:00",
+  "description": "Non-Open Access Article Acquisition Strategies",
+  "strategies": [
+    {
+      "category": "shadow_libraries",
+      "priority": "high",
+      "methods": [
+        {
+          "name": "Sci-Hub",
+          "type": "shadow_library",
+          "access_method": "DOI/URL/PMID input",
+          "output": "PDF full text",
+          "domains": ["sci-hub.se", "sci-hub.st", "sci-hub.ru"],
+          "status": "active_but_unstable",
+          "legal_risk": "high",
+          "reliability": "medium",
+          "notes": "Domains frequently change due to legal actions"
+        },
+        {
+          "name": "Library Genesis (LibGen)",
+          "type": "shadow_library",
+          "access_method": "Direct search, no registration",
+          "output": "Scientific articles, books, textbooks",
+          "domains": ["libgen.is", "libgen.rs", "libgen.li"],
+          "status": "active",
+          "legal_risk": "high",
+          "reliability": "medium-high",
+          "notes": "Large collection, mirrors available"
+        }
+      ]
+    },
+    {
+      "category": "aggregator_navigators",
+      "priority": "medium",
+      "methods": [
+        {
+          "name": "Google Scholar Mirrors",
+          "features": ["Sci-Hub integration", "Term lookup", "Conference/journal finder"],
+          "status": "variable",
+          "reliability": "low-medium",
+          "notes": "Mirror sites change frequently"
+        },
+        {
+          "name": "Gufen Xueshu (谷粉学术)",
+          "features": ["Sci-Hub portal", "DOI direct download"],
+          "region": "China",
+          "status": "active",
+          "reliability": "medium"
+        },
+        {
+          "name": "GeenMedical",
+          "features": ["PubMed integration", "Sci-Hub link", "Baidu Scholar", "One-click download"],
+          "focus": "Medical/Biological",
+          "status": "active",
+          "reliability": "medium-high"
+        },
+        {
+          "name": "Wenxian Buluo (文献部落, 459.org)",
+          "features": ["CNKI alternative", "Wanfang", "VIP"],
+          "region": "China",
+          "status": "active",
+          "reliability": "medium"
+        }
+      ]
+    },
+    {
+      "category": "social_platforms",
+      "priority": "medium",
+      "methods": [
+        {
+          "name": "ResearchGate",
+          "type": "academic_social",
+          "access_method": "Author upload",
+          "authorization": "not_always_authorized",
+          "success_rate": "medium",
+          "notes": "Authors may upload PDFs without publisher permission"
+        },
+        {
+          "name": "Academia.edu",
+          "type": "academic_social",
+          "access_method": "Author upload",
+          "authorization": "not_always_authorized",
+          "success_rate": "medium"
+        },
+        {
+          "name": "Literature互助论坛",
+          "examples": ["Gufen Xueshu Forum"],
+          "method": "Community request and share",
+          "success_rate": "variable",
+          "time_cost": "high"
+        }
+      ]
+    },
+    {
+      "category": "institutional_access",
+      "priority": "highest",
+      "legality": "fully_legal",
+      "methods": [
+        {
+          "name": "University/Institute Library",
+          "access": "Campus network or VPN (CARSI)",
+          "databases": ["Web of Science", "Elsevier", "IEEE", "Springer"],
+          "requirements": ["Valid institutional affiliation"],
+          "reliability": "very_high"
+        },
+        {
+          "name": "NSTL (国家科技图书文献中心)",
+          "service": "Document delivery",
+          "cost": "Free quota available",
+          "region": "China",
+          "url": "https://www.nstl.gov.cn"
+        },
+        {
+          "name": "National Library Reference Alliance",
+          "service": "Document delivery",
+          "cost": "Free within limits"
+        }
+      ]
+    },
+    {
+      "category": "open_access_alternatives",
+      "priority": "high",
+      "legality": "fully_legal",
+      "methods": [
+        {
+          "name": "Preprint Servers",
+          "platforms": [
+            {"name": "arXiv", "fields": ["physics", "mathematics", "computer_science"]},
+            {"name": "bioRxiv", "fields": ["biomedicine"]},
+            {"name": "medRxiv", "fields": ["medicine"]},
+            {"name": "chemRxiv", "fields": ["chemistry"]},
+            {"name": "SSRN", "fields": ["social_sciences"]}
+          ],
+          "note": "May be pre-peer-review version"
+        },
+        {
+          "name": "Institutional Repositories",
+          "access_method": "University/institution open archives",
+          "examples": ["DASH (Harvard)", "eScholarship (UC)"]
+        },
+        {
+          "name": "Browser Plugins",
+          "tools": [
+            {"name": "Unpaywall", "function": "Auto-detect legal OA versions"},
+            {"name": "Open Access Button", "function": "Request and find OA copies"}
+          ]
+        }
+      ]
+    },
+    {
+      "category": "direct_author_contact",
+      "priority": "medium",
+      "legality": "generally_legal",
+      "methods": [
+        {
+          "name": "Email Corresponding Author",
+          "success_rate": "60-80%",
+          "response_time": "days to weeks",
+          "etiquette": "Polite, specific request with purpose"
+        },
+        {
+          "name": "ResearchGate Request",
+          "success_rate": "40-60%",
+          "faster_than_email": true
+        }
+      ]
+    },
+    {
+      "category": "national_public_resources",
+      "priority": "medium",
+      "legality": "fully_legal",
+      "methods": [
+        {
+          "name": "National Philosophy Social Science Literature Center",
+          "region": "China",
+          "coverage": "Chinese core journals",
+          "cost": "free",
+          "url": "https://www.ncpssd.org"
+        },
+        {
+          "name": "Research4Life",
+          "eligibility": "Developing countries",
+          "programs": ["HINARI", "AGORA", "OARE", "ARDI"],
+          "cost": "free"
+        }
+      ]
+    }
+  ],
+  "helper_tools": [
+    {
+      "category": "search_engines",
+      "tools": [
+        {"name": "Google Scholar", "tip": "Look for [PDF] links in results"},
+        {"name": "CORE", "focus": "OA aggregated content"},
+        {"name": "BASE", "focus": "Academic web resources"}
+      ]
+    },
+    {
+      "category": "reference_managers",
+      "tools": [
+        {"name": "Zotero", "feature": "Find PDF via DOI from community"},
+        {"name": "Mendeley", "feature": "Similar PDF lookup"}
+      ]
+    },
+    {
+      "category": "advanced_search",
+      "tips": [
+        "Search: \"article title\" + pdf",
+        "Search: site:.edu filetype:pdf",
+        "Use Google Scholar's \"All versions\" link"
+      ]
+    }
+  ],
+  "risk_disclaimer": {
+    "shadow_libraries": "High legal risk in some jurisdictions. Use institutional access when possible.",
+    "author_uploads": "May violate publisher agreements. Authors take the risk, not downloader.",
+    "recommended_priority": "Institutional > OA alternatives > Author contact > Shadow libraries"
+  }
+}
