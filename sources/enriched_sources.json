@@ -5,7 +5,7 @@
       "url": "https://pytorch.org",
       "description": "Deep learning framework",
       "topic": "deep_learning",
-      "date_added": "2026-03-02T14:15:41.095538",
+      "date_added": "2026-03-02T16:09:13.800801",
       "accessibility": {
         "accessible": true,
         "status": 200,
@@ -25,7 +25,7 @@
       "url": "https://arxiv.org/list/cs.LG/recent",
       "description": "Machine learning papers",
       "topic": "deep_learning",
-      "date_added": "2026-03-02T14:16:35.395437",
+      "date_added": "2026-03-02T16:10:09.225583",
       "accessibility": {
         "accessible": true,
         "status": 200,
@@ -42,31 +42,11 @@
       }
     },
     {
-      "title": "DeepMind",
-      "url": "https://deepmind.google/research",
-      "description": "DeepMind research",
-      "topic": "deep_learning",
-      "date_added": "2026-03-02T14:17:15.002614",
-      "accessibility": {
-        "accessible": true,
-        "status": 200,
-        "attempts": 1
-      },
-      "reproducibility": {
-        "code_available": "Varies",
-        "data_public": "Varies",
-        "run_barrier": "Medium",
-        "risk_notes": [
-          "Corporate research, partial code release"
-        ]
-      }
-    },
-    {
       "title": "Distill.pub",
       "url": "https://distill.pub",
       "description": "ML explanations",
       "topic": "deep_learning",
-      "date_added": "2026-03-02T14:17:15.720031",
+      "date_added": "2026-03-02T16:10:33.293482",
       "accessibility": {
         "accessible": true,
         "status": 200,
@@ -86,7 +66,7 @@
       "url": "https://fast.ai",
       "description": "Practical deep learning",
       "topic": "deep_learning",
-      "date_added": "2026-03-02T14:17:17.649849",
+      "date_added": "2026-03-02T16:10:36.965807",
       "accessibility": {
         "accessible": true,
         "status": 200,
@@ -106,7 +86,7 @@
       "url": "https://introtodeeplearning.com",
       "description": "MIT deep learning course",
       "topic": "deep_learning",
-      "date_added": "2026-03-02T14:17:18.749026",
+      "date_added": "2026-03-02T16:10:41.336999",
       "accessibility": {
         "accessible": true,
         "status": 200,
@@ -128,7 +108,7 @@
       "url": "https://ncbi.nlm.nih.gov",
       "description": "National Center for Biotechnology",
       "topic": "bioinformatics",
-      "date_added": "2026-03-02T14:17:21.047790",
+      "date_added": "2026-03-02T16:10:43.161786",
       "accessibility": {
         "accessible": true,
         "status": 200,
@@ -149,7 +129,7 @@
       "url": "https://uniprot.org",
       "description": "Protein knowledgebase",
       "topic": "bioinformatics",
-      "date_added": "2026-03-02T14:17:30.159272",
+      "date_added": "2026-03-02T16:10:55.007173",
       "accessibility": {
         "accessible": true,
         "status": 200,
@@ -170,7 +150,7 @@
       "url": "https://rcsb.org",
       "description": "Protein Data Bank",
       "topic": "bioinformatics",
-      "date_added": "2026-03-02T14:17:32.828944",
+      "date_added": "2026-03-02T16:10:57.524263",
       "accessibility": {
         "accessible": true,
         "status": 200,
@@ -191,7 +171,7 @@
       "url": "https://bioconductor.org",
       "description": "Bioinformatics packages",
       "topic": "bioinformatics",
-      "date_added": "2026-03-02T14:17:33.823986",
+      "date_added": "2026-03-02T16:10:58.768149",
       "accessibility": {
         "accessible": true,
         "status": 200,
@@ -211,7 +191,7 @@
       "url": "https://galaxyproject.org",
       "description": "Data analysis platform",
       "topic": "bioinformatics",
-      "date_added": "2026-03-02T14:17:34.955660",
+      "date_added": "2026-03-02T16:11:00.934503",
       "accessibility": {
         "accessible": true,
         "status": 200,
@@ -231,7 +211,7 @@
       "url": "https://broadinstitute.org",
       "description": "Genomics research",
       "topic": "bioinformatics",
-      "date_added": "2026-03-02T14:17:39.480555",
+      "date_added": "2026-03-02T16:11:06.399400",
       "accessibility": {
         "accessible": true,
         "status": 200,
@@ -251,7 +231,7 @@
       "url": "https://ebi.ac.uk",
       "description": "European Bioinformatics Institute",
       "topic": "bioinformatics",
-      "date_added": "2026-03-02T14:17:42.249404",
+      "date_added": "2026-03-02T16:11:09.856758",
       "accessibility": {
         "accessible": true,
         "status": 200,
@@ -272,7 +252,7 @@
       "url": "https://internationalgenome.org",
       "description": "Human genetic variation",
       "topic": "bioinformatics",
-      "date_added": "2026-03-02T14:17:43.645717",
+      "date_added": "2026-03-02T16:11:11.566684",
       "accessibility": {
         "accessible": true,
         "status": 200,
@@ -294,7 +274,7 @@
       "url": "https://complexityzoo.net",
       "description": "Complexity classes reference",
       "topic": "computational_theory",
-      "date_added": "2026-03-02T14:17:46.250131",
+      "date_added": "2026-03-02T16:11:13.929884",
       "accessibility": {
         "accessible": true,
         "status": 200,
@@ -314,7 +294,7 @@
       "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011",
       "description": "Algorithm course",
       "topic": "computational_theory",
-      "date_added": "2026-03-02T14:17:50.034965",
+      "date_added": "2026-03-02T16:11:18.721841",
       "accessibility": {
         "accessible": true,
         "status": 200,
@@ -334,7 +314,7 @@
       "url": "https://www-cs-faculty.stanford.edu/~knuth/taocp.html",
       "description": "Knuth's algorithms",
       "topic": "computational_theory",
-      "date_added": "2026-03-02T14:17:51.170506",
+      "date_added": "2026-03-02T16:11:20.066438",
       "accessibility": {
         "accessible": true,
         "status": 200,
@@ -354,7 +334,7 @@
       "url": "https://eccc.weizmann.ac.il",
       "description": "Electronic Colloquium on Computational Complexity",
       "topic": "computational_theory",
-      "date_added": "2026-03-02T14:17:53.007611",
+      "date_added": "2026-03-02T16:11:21.895681",
       "accessibility": {
         "accessible": true,
         "status": 200,
@@ -374,7 +354,7 @@
       "url": "https://plato.stanford.edu/entries/lambda-calculus",
       "description": "Lambda calculus",
       "topic": "computational_theory",
-      "date_added": "2026-03-02T14:17:59.752289",
+      "date_added": "2026-03-02T16:11:26.689483",
       "accessibility": {
         "accessible": true,
         "status": 200,
@@ -394,7 +374,7 @@
       "url": "https://homotopytypetheory.org",
       "description": "Homotopy type theory",
       "topic": "computational_theory",
-      "date_added": "2026-03-02T14:18:00.740734",
+      "date_added": "2026-03-02T16:11:28.977489",
       "accessibility": {
         "accessible": true,
         "status": 200,
@@ -414,7 +394,7 @@
       "url": "https://coq.inria.fr",
       "description": "Formal proof management",
       "topic": "computational_theory",
-      "date_added": "2026-03-02T14:18:03.290146",
+      "date_added": "2026-03-02T16:11:32.227931",
       "accessibility": {
         "accessible": true,
         "status": 200,
@@ -434,11 +414,11 @@
       "url": "https://isabelle.in.tum.de",
       "description": "Proof assistant",
       "topic": "computational_theory",
-      "date_added": "2026-03-02T14:18:05.877312",
+      "date_added": "2026-03-02T16:11:42.354714",
       "accessibility": {
         "accessible": true,
         "status": 200,
-        "attempts": 1
+        "attempts": 2
       },
       "reproducibility": {
         "code_available": true,

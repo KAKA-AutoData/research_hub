@@ -1,10 +1,10 @@
 # Research Sources Database
 
-Generated: 2026-03-02T14:18:06.379422
+Generated: 2026-03-02T16:11:42.856452
 
 ## Deep Learning
 
-*Accessible: 6/10*
+*Accessible: 5/10*
 
 - ✅ [PyTorch](https://pytorch.org) - Deep learning framework
 - ❌ [TensorFlow](https://tensorflow.org) - ML platform by Google
@@ -12,7 +12,7 @@ Generated: 2026-03-02T14:18:06.379422
 - ❌ [Papers With Code](https://paperswithcode.com) - ML papers with code
 - ✅ [ArXiv CS.LG](https://arxiv.org/list/cs.LG/recent) - Machine learning papers
 - ❌ [OpenAI Research](https://openai.com/research) - OpenAI publications
-- ✅ [DeepMind](https://deepmind.google/research) - DeepMind research
+- ❌ [DeepMind](https://deepmind.google/research) - DeepMind research
 - ✅ [Distill.pub](https://distill.pub) - ML explanations
 - ✅ [Fast.ai](https://fast.ai) - Practical deep learning
 - ✅ [MIT 6.S191](https://introtodeeplearning.com) - MIT deep learning course
@@ -49,4 +49,4 @@ Generated: 2026-03-02T14:18:06.379422
 
 
 ---
-**Summary**: 22 accessible, 8 failed
+**Summary**: 21 accessible, 9 failed
