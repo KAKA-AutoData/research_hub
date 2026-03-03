@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-03-03T12:21:39.473050",
+  "elapsed_ms": 21942,
+  "total": 30,
+  "success": 22,
+  "failed": 8,
+  "failure_distribution": {
+    "http_error": 4,
+    "network_error": 4
+  }
+}

@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
 """
-Research Ops 资料抓取脚本
-约束: 8秒超时, 1次重试, 失败不阻塞
+Research Hub source fetcher.
+Policy: parallel check, 8s timeout, 2 attempts per URL, failure-isolated.
 """
 import json
-import time
-import urllib.request
-import urllib.error
-from datetime import datetime
 import ssl
+import time
+import urllib.error
+import urllib.request
+from collections import Counter
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime
+from pathlib import Path
 
-# 禁用 SSL 验证（部分站点需要）
 ssl._create_default_https_context = ssl._create_unverified_context
 
 TOPICS = {
@@ -49,105 +51,192 @@ TOPICS = {
         ("Type Theory", "https://homotopytypetheory.org", "Homotopy type theory"),
         ("Coq Proof Assistant", "https://coq.inria.fr", "Formal proof management"),
         ("Isabelle/HOL", "https://isabelle.in.tum.de", "Proof assistant"),
-    ]
+    ],
 }
 
-def check_url(url, timeout=8):
-    """检查 URL 可访问性，8秒超时"""
-    headers = {'User-Agent': 'Mozilla/5.0 (ResearchOps/1.0)'}
+MAX_WORKERS = 20
+TIMEOUT_SEC = 8
+
+
+def check_url(url: str, timeout: int = TIMEOUT_SEC) -> dict:
+    headers = {'User-Agent': 'Mozilla/5.0 (ResearchOps/parallel-checker)'}
     req = urllib.request.Request(url, headers=headers, method='HEAD')
-    
-    for attempt in range(2):  # 原始请求 + 1次重试
+
+    last_error = 'unknown'
+    started = time.time()
+    for attempt in range(1, 3):
+        t0 = time.time()
         try:
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 return {
-                    "accessible": True,
-                    "status": resp.getcode(),
-                    "attempts": attempt + 1
+                    'accessible': True,
+                    'status': resp.getcode(),
+                    'attempts': attempt,
+                    'elapsed_ms': int((time.time() - started) * 1000),
+                    'last_attempt_ms': int((time.time() - t0) * 1000),
+                    'error_type': '',
                 }
-        except urllib.error.HTTPError as e:
-            if e.code in (301, 302, 307, 308):  # 重定向视为成功
-                return {"accessible": True, "status": e.code, "attempts": attempt + 1}
-            if attempt == 0:
-                time.sleep(1)
-                continue
-            return {"accessible": False, "error": f"HTTP {e.code}", "attempts": attempt + 1}
-        except Exception as e:
-            if attempt == 0:
-                time.sleep(1)
-                continue
-            return {"accessible": False, "error": str(e)[:50], "attempts": attempt + 1}
-    
-    return {"accessible": False, "error": "Max retries exceeded", "attempts": 2}
+        except urllib.error.HTTPError as exc:
+            if exc.code in (301, 302, 307, 308):
+                return {
+                    'accessible': True,
+                    'status': exc.code,
+                    'attempts': attempt,
+                    'elapsed_ms': int((time.time() - started) * 1000),
+                    'last_attempt_ms': int((time.time() - t0) * 1000),
+                    'error_type': '',
+                }
+            last_error = f'HTTP {exc.code}'
+            error_type = 'http_error'
+        except Exception as exc:
+            last_error = str(exc)[:100]
+            error_type = 'network_error'
 
-def main():
-    results = {}
-    failed_urls = []
-    
+        if attempt == 1:
+            time.sleep(0.35)
+
+    return {
+        'accessible': False,
+        'status': None,
+        'attempts': 2,
+        'elapsed_ms': int((time.time() - started) * 1000),
+        'last_attempt_ms': 0,
+        'error': last_error,
+        'error_type': error_type,
+    }
+
+
+def make_entry(topic: str, name: str, url: str, desc: str) -> tuple:
+    check = check_url(url)
+    entry = {
+        'title': name,
+        'url': url,
+        'description': desc,
+        'topic': topic,
+        'date_added': datetime.now().isoformat(),
+        'accessibility': check,
+    }
+    fail = None
+    if not check.get('accessible'):
+        fail = {
+            'name': name,
+            'url': url,
+            'reason': check.get('error', 'Unknown'),
+            'error_type': check.get('error_type', 'unknown'),
+            'attempts': check.get('attempts', 0),
+            'elapsed_ms': check.get('elapsed_ms', 0),
+        }
+    return topic, entry, fail
+
+
+def main() -> None:
+    started = time.time()
+    tasks = []
     for topic, sources in TOPICS.items():
-        print(f"\n[{datetime.now().strftime('%H:%M:%S')}] 处理主题: {topic}")
-        topic_results = []
-        
         for name, url, desc in sources:
-            print(f"  检查: {name}...", end=" ", flush=True)
-            check = check_url(url)
-            
-            entry = {
-                "title": name,
-                "url": url,
-                "description": desc,
-                "topic": topic,
-                "date_added": datetime.now().isoformat(),
-                "accessibility": check
-            }
-            
-            if check["accessible"]:
-                print(f"✅ ({check.get('status', 'OK')})")
+            tasks.append((topic, name, url, desc))
+
+    results = {k: [] for k in TOPICS.keys()}
+    failed_urls = []
+
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] parallel source check start, total={len(tasks)}")
+
+    with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(tasks))) as ex:
+        futs = [ex.submit(make_entry, *t) for t in tasks]
+        for fut in as_completed(futs):
+            topic, entry, fail = fut.result()
+            results[topic].append(entry)
+            ok = entry['accessibility'].get('accessible')
+            status = entry['accessibility'].get('status')
+            if ok:
+                print(f"  ✅ [{topic}] {entry['title']} ({status})")
             else:
-                print(f"❌ ({check.get('error', 'FAIL')})")
-                failed_urls.append({"name": name, "url": url, "reason": check.get("error", "Unknown")})
-            
-            topic_results.append(entry)
-            time.sleep(0.5)  # 礼貌延迟
-        
-        results[topic] = topic_results
-    
-    # 保存 JSON
-    with open("sources/raw_fetched.json", "w", encoding="utf-8") as f:
-        json.dump(results, f, indent=2, ensure_ascii=False)
-    
-    # 生成 Markdown
+                err = entry['accessibility'].get('error', 'FAIL')
+                print(f"  ❌ [{topic}] {entry['title']} ({err})")
+                if fail:
+                    failed_urls.append(fail)
+
+    # keep stable order by title
+    for topic in results:
+        results[topic] = sorted(results[topic], key=lambda x: x.get('title', ''))
+
+    Path('sources').mkdir(parents=True, exist_ok=True)
+    Path('daily').mkdir(parents=True, exist_ok=True)
+
+    Path('sources/raw_fetched.json').write_text(json.dumps(results, indent=2, ensure_ascii=False), encoding='utf-8')
+    Path('sources/failed_urls.json').write_text(json.dumps(failed_urls, indent=2, ensure_ascii=False), encoding='utf-8')
+
     md_content = "# Research Sources Database\n\nGenerated: " + datetime.now().isoformat() + "\n\n"
     total_ok = 0
     total_fail = 0
-    
+    per_topic = {}
+
     for topic, entries in results.items():
         md_content += f"## {topic.replace('_', ' ').title()}\n\n"
-        ok_count = sum(1 for e in entries if e["accessibility"]["accessible"])
+        ok_count = sum(1 for e in entries if e['accessibility'].get('accessible'))
         fail_count = len(entries) - ok_count
         total_ok += ok_count
         total_fail += fail_count
-        
+        per_topic[topic] = {'ok': ok_count, 'fail': fail_count, 'total': len(entries)}
+
         md_content += f"*Accessible: {ok_count}/{len(entries)}*\n\n"
-        
         for entry in entries:
-            status = "✅" if entry["accessibility"]["accessible"] else "❌"
+            status = '✅' if entry['accessibility'].get('accessible') else '❌'
             md_content += f"- {status} [{entry['title']}]({entry['url']}) - {entry['description']}\n"
         md_content += "\n"
-    
-    md_content += f"\n---\n**Summary**: {total_ok} accessible, {total_fail} failed\n"
-    
-    with open("sources/SOURCES.md", "w", encoding="utf-8") as f:
-        f.write(md_content)
-    
-    # 保存失败记录
-    with open("sources/failed_urls.json", "w", encoding="utf-8") as f:
-        json.dump(failed_urls, f, indent=2, ensure_ascii=False)
-    
-    print(f"\n{'='*50}")
-    print(f"完成! 总计: {total_ok} 成功, {total_fail} 失败")
-    print(f"输出: sources/raw_fetched.json, sources/SOURCES.md")
-    print(f"失败记录: sources/failed_urls.json")
 
-if __name__ == "__main__":
+    md_content += f"\n---\n**Summary**: {total_ok} accessible, {total_fail} failed\n"
+    Path('sources/SOURCES.md').write_text(md_content, encoding='utf-8')
+
+    # telemetry / api usage style report
+    error_dist = Counter(x.get('error_type', 'unknown') for x in failed_urls)
+    latency_samples = []
+    retry_total = 0
+    for topic_entries in results.values():
+        for entry in topic_entries:
+            access = entry.get('accessibility', {})
+            latency_samples.append(int(access.get('elapsed_ms', 0) or 0))
+            retry_total += max(0, int(access.get('attempts', 1) or 1) - 1)
+
+    elapsed_ms = int((time.time() - started) * 1000)
+    today = datetime.now().strftime('%Y-%m-%d')
+    api_usage = {
+        'generated_at': datetime.now().isoformat(),
+        'pipeline': 'research_hub_fetch_sources',
+        'parallel_workers': min(MAX_WORKERS, len(tasks)),
+        'timeout_sec': TIMEOUT_SEC,
+        'elapsed_ms': elapsed_ms,
+        'summary': {
+            'total_sources': len(tasks),
+            'success_count': total_ok,
+            'failed_count': total_fail,
+            'success_rate': round((total_ok / len(tasks) * 100.0), 2) if tasks else 0.0,
+            'retry_total': retry_total,
+            'avg_latency_ms': round(sum(latency_samples) / len(latency_samples), 2) if latency_samples else 0,
+            'max_latency_ms': max(latency_samples) if latency_samples else 0,
+        },
+        'by_topic': per_topic,
+        'failure_distribution': dict(error_dist),
+    }
+    Path(f'daily/api-usage-{today}.json').write_text(json.dumps(api_usage, indent=2, ensure_ascii=False), encoding='utf-8')
+    Path('daily/api-usage-latest.json').write_text(json.dumps(api_usage, indent=2, ensure_ascii=False), encoding='utf-8')
+
+    # detailed fetch stats
+    fetch_stats = {
+        'generated_at': datetime.now().isoformat(),
+        'elapsed_ms': elapsed_ms,
+        'total': len(tasks),
+        'success': total_ok,
+        'failed': total_fail,
+        'failure_distribution': dict(error_dist),
+    }
+    Path('sources/fetch_stats.json').write_text(json.dumps(fetch_stats, indent=2, ensure_ascii=False), encoding='utf-8')
+
+    print('=' * 60)
+    print(f'完成! 总计: {total_ok} 成功, {total_fail} 失败, elapsed_ms={elapsed_ms}')
+    print('输出: sources/raw_fetched.json, sources/SOURCES.md, sources/failed_urls.json')
+    print(f'API usage: daily/api-usage-{today}.json')
+
+
+if __name__ == '__main__':
     main()

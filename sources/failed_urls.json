@@ -1,47 +1,66 @@
 [
   {
-    "name": "TensorFlow",
-    "url": "https://tensorflow.org",
-    "reason": "<urlopen error [Errno 101] Network is unreachable>"
-  },
-  {
-    "name": "Hugging Face",
-    "url": "https://huggingface.co",
-    "reason": "<urlopen error [Errno 101] Network is unreachable>"
-  },
-  {
-    "name": "Papers With Code",
-    "url": "https://paperswithcode.com",
-    "reason": "<urlopen error [Errno 101] Network is unreachable>"
-  },
-  {
     "name": "OpenAI Research",
     "url": "https://openai.com/research",
-    "reason": "HTTP 403"
-  },
-  {
-    "name": "DeepMind",
-    "url": "https://deepmind.google/research",
-    "reason": "<urlopen error _ssl.c:990: The handshake operation"
-  },
-  {
-    "name": "Ensembl",
-    "url": "https://ensembl.org",
-    "reason": "HTTP 403"
-  },
-  {
-    "name": "Kaggle Genomics",
-    "url": "https://kaggle.com/datasets?tags=13204-genomics",
-    "reason": "HTTP 404"
-  },
-  {
-    "name": "Stanford Encyclopedia of Philosophy - Logic",
-    "url": "https://plato.stanford.edu/entries/logic-computational",
-    "reason": "HTTP 404"
+    "reason": "HTTP 403",
+    "error_type": "http_error",
+    "attempts": 2,
+    "elapsed_ms": 998
   },
   {
     "name": "CS Theory StackExchange",
     "url": "https://cstheory.stackexchange.com",
-    "reason": "HTTP 403"
+    "reason": "HTTP 403",
+    "error_type": "http_error",
+    "attempts": 2,
+    "elapsed_ms": 1326
+  },
+  {
+    "name": "Kaggle Genomics",
+    "url": "https://kaggle.com/datasets?tags=13204-genomics",
+    "reason": "HTTP 404",
+    "error_type": "http_error",
+    "attempts": 2,
+    "elapsed_ms": 2894
+  },
+  {
+    "name": "Stanford Encyclopedia of Philosophy - Logic",
+    "url": "https://plato.stanford.edu/entries/logic-computational",
+    "reason": "HTTP 404",
+    "error_type": "http_error",
+    "attempts": 2,
+    "elapsed_ms": 3155
+  },
+  {
+    "name": "Hugging Face",
+    "url": "https://huggingface.co",
+    "reason": "<urlopen error [Errno 101] Network is unreachable>",
+    "error_type": "network_error",
+    "attempts": 2,
+    "elapsed_ms": 16392
+  },
+  {
+    "name": "TensorFlow",
+    "url": "https://tensorflow.org",
+    "reason": "<urlopen error [Errno 101] Network is unreachable>",
+    "error_type": "network_error",
+    "attempts": 2,
+    "elapsed_ms": 16614
+  },
+  {
+    "name": "Papers With Code",
+    "url": "https://paperswithcode.com",
+    "reason": "<urlopen error [Errno 101] Network is unreachable>",
+    "error_type": "network_error",
+    "attempts": 2,
+    "elapsed_ms": 18209
+  },
+  {
+    "name": "Ensembl",
+    "url": "https://ensembl.org",
+    "reason": "The read operation timed out",
+    "error_type": "network_error",
+    "attempts": 2,
+    "elapsed_ms": 21922
   }
 ]

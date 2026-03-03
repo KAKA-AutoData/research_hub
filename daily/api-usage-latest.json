@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-03-03T12:21:39.688682",
+  "pipeline": "research_hub_fetch_sources",
+  "parallel_workers": 20,
+  "timeout_sec": 8,
+  "elapsed_ms": 21942,
+  "summary": {
+    "total_sources": 30,
+    "success_count": 22,
+    "failed_count": 8,
+    "success_rate": 73.33,
+    "retry_total": 8,
+    "avg_latency_ms": 4296.17,
+    "max_latency_ms": 21922,
+    "event_count": 1,
+    "last_pipeline": "research_hub_daily_github",
+    "last_fetch_total": 30,
+    "last_fetch_success": 22,
+    "last_fetch_failed": 8
+  },
+  "by_topic": {
+    "deep_learning": {
+      "ok": 6,
+      "fail": 4,
+      "total": 10
+    },
+    "bioinformatics": {
+      "ok": 8,
+      "fail": 2,
+      "total": 10
+    },
+    "computational_theory": {
+      "ok": 8,
+      "fail": 2,
+      "total": 10
+    }
+  },
+  "failure_distribution": {
+    "http_error": 4,
+    "network_error": 4
+  },
+  "events": [
+    {
+      "timestamp": "2026-03-03T12:21:39.688655",
+      "pipeline": "research_hub_daily_github",
+      "notes": "fetch_sources + reproducibility + parallel(index,report) + commit/push",
+      "source_fetch": {
+        "generated_at": "2026-03-03T12:21:39.473050",
+        "elapsed_ms": 21942,
+        "total": 30,
+        "success": 22,
+        "failed": 8,
+        "failure_distribution": {
+          "http_error": 4,
+          "network_error": 4
+        }
+      }
+    }
+  ],
+  "latest": {
+    "timestamp": "2026-03-03T12:21:39.688655",
+    "pipeline": "research_hub_daily_github",
+    "notes": "fetch_sources + reproducibility + parallel(index,report) + commit/push",
+    "source_fetch": {
+      "generated_at": "2026-03-03T12:21:39.473050",
+      "elapsed_ms": 21942,
+      "total": 30,
+      "success": 22,
+      "failed": 8,
+      "failure_distribution": {
+        "http_error": 4,
+        "network_error": 4
+      }
+    }
+  }
+}

@@ -1,13 +1,13 @@
 # Reproducibility Analysis Report
 
-Generated: 2026-03-03T03:49:27.978590
+Generated: 2026-03-03T12:21:39.565002
 
 ## Summary
 
 | Barrier Level | Count |
 |--------------|-------|
 | Low (Easy to reproduce) | 9 |
-| Medium (Some effort required) | 1 |
+| Medium (Some effort required) | 2 |
 | High (Significant barriers) | 1 |
 | Unknown | 10 |
 
@@ -15,19 +15,19 @@ Generated: 2026-03-03T03:49:27.978590
 
 ### Deep Learning
 
-**PyTorch**
-- URL: https://pytorch.org
-- Code Available: True
-- Data Public: True
-- Run Barrier: Low
-- Risks: Production tools, well maintained
-
 **ArXiv CS.LG**
 - URL: https://arxiv.org/list/cs.LG/recent
 - Code Available: Check paper
 - Data Public: Check paper
 - Run Barrier: Medium-High
 - Risks: Academic code may be unmaintained, Data access varies by study
+
+**DeepMind**
+- URL: https://deepmind.google/research
+- Code Available: Varies
+- Data Public: Varies
+- Run Barrier: Medium
+- Risks: Corporate research, partial code release
 
 **Distill.pub**
 - URL: https://distill.pub
@@ -50,38 +50,24 @@ Generated: 2026-03-03T03:49:27.978590
 - Run Barrier: Unknown
 - Risks: Manual review needed
 
+**PyTorch**
+- URL: https://pytorch.org
+- Code Available: True
+- Data Public: True
+- Run Barrier: Low
+- Risks: Production tools, well maintained
+
 ### Bioinformatics
 
-**NCBI**
-- URL: https://ncbi.nlm.nih.gov
-- Code Available: False
-- Data Public: True
-- Run Barrier: Low
-- Risks: Web API/service, not downloadable code, May have rate limits
-
-**UniProt**
-- URL: https://uniprot.org
-- Code Available: False
-- Data Public: True
-- Run Barrier: Low
-- Risks: Web API/service, not downloadable code, May have rate limits
-
-**PDB**
-- URL: https://rcsb.org
-- Code Available: False
-- Data Public: True
-- Run Barrier: Low
-- Risks: Web API/service, not downloadable code, May have rate limits
-
-**Bioconductor**
-- URL: https://bioconductor.org
+**1000 Genomes**
+- URL: https://internationalgenome.org
 - Code Available: False
 - Data Public: False
 - Run Barrier: Unknown
 - Risks: Manual review needed
 
-**Galaxy Project**
-- URL: https://galaxyproject.org
+**Bioconductor**
+- URL: https://bioconductor.org
 - Code Available: False
 - Data Public: False
 - Run Barrier: Unknown
@@ -101,17 +87,66 @@ Generated: 2026-03-03T03:49:27.978590
 - Run Barrier: Low
 - Risks: Web API/service, not downloadable code, May have rate limits
 
-**1000 Genomes**
-- URL: https://internationalgenome.org
+**Galaxy Project**
+- URL: https://galaxyproject.org
 - Code Available: False
 - Data Public: False
 - Run Barrier: Unknown
 - Risks: Manual review needed
 
+**NCBI**
+- URL: https://ncbi.nlm.nih.gov
+- Code Available: False
+- Data Public: True
+- Run Barrier: Low
+- Risks: Web API/service, not downloadable code, May have rate limits
+
+**PDB**
+- URL: https://rcsb.org
+- Code Available: False
+- Data Public: True
+- Run Barrier: Low
+- Risks: Web API/service, not downloadable code, May have rate limits
+
+**UniProt**
+- URL: https://uniprot.org
+- Code Available: False
+- Data Public: True
+- Run Barrier: Low
+- Risks: Web API/service, not downloadable code, May have rate limits
+
 ### Computational Theory
 
 **Complexity Zoo**
 - URL: https://complexityzoo.net
+- Code Available: False
+- Data Public: False
+- Run Barrier: Unknown
+- Risks: Manual review needed
+
+**Coq Proof Assistant**
+- URL: https://coq.inria.fr
+- Code Available: True
+- Data Public: True
+- Run Barrier: Low
+- Risks: Production tools, well maintained
+
+**ECCC**
+- URL: https://eccc.weizmann.ac.il
+- Code Available: False
+- Data Public: False
+- Run Barrier: Unknown
+- Risks: Manual review needed
+
+**Isabelle/HOL**
+- URL: https://isabelle.in.tum.de
+- Code Available: True
+- Data Public: True
+- Run Barrier: Low
+- Risks: Production tools, well maintained
+
+**Lambda Calculus**
+- URL: https://plato.stanford.edu/entries/lambda-calculus
 - Code Available: False
 - Data Public: False
 - Run Barrier: Unknown
@@ -131,38 +166,10 @@ Generated: 2026-03-03T03:49:27.978590
 - Run Barrier: Unknown
 - Risks: Manual review needed
 
-**ECCC**
-- URL: https://eccc.weizmann.ac.il
-- Code Available: False
-- Data Public: False
-- Run Barrier: Unknown
-- Risks: Manual review needed
-
-**Lambda Calculus**
-- URL: https://plato.stanford.edu/entries/lambda-calculus
-- Code Available: False
-- Data Public: False
-- Run Barrier: Unknown
-- Risks: Manual review needed
-
 **Type Theory**
 - URL: https://homotopytypetheory.org
 - Code Available: False
 - Data Public: False
 - Run Barrier: Unknown
 - Risks: Manual review needed
-
-**Coq Proof Assistant**
-- URL: https://coq.inria.fr
-- Code Available: True
-- Data Public: True
-- Run Barrier: Low
-- Risks: Production tools, well maintained
-
-**Isabelle/HOL**
-- URL: https://isabelle.in.tum.de
-- Code Available: True
-- Data Public: True
-- Run Barrier: Low
-- Risks: Production tools, well maintained
 
