@@ -1,20 +1,20 @@
 # Research Hub Index
 
 > Auto-generated for Codex and human readers  
-> Generated: 2026-03-03 12:21:39
+> Generated: 2026-03-04 05:20:58
 
 ## Quick Stats
 
 | Metric | Value |
 |--------|-------|
-| Total Sources | 22 |
+| Total Sources | 23 |
 | Topics | 3 |
-| Accessible | 22 |
+| Accessible | 23 |
 
 ## Topics
 
 - **Deep Learning**: 6 sources
-- **Bioinformatics**: 8 sources
+- **Bioinformatics**: 9 sources
 - **Computational Theory**: 8 sources
 
 ## File Structure
@@ -79,6 +79,7 @@ dl_sources = sources.get('deep_learning', [])
 | Bioconductor | [Link](https://bioconductor.org) | Unknown | False | False |
 | Broad Institute | [Link](https://broadinstitute.org) | Medium | Varies | Varies |
 | EBI | [Link](https://ebi.ac.uk) | Low | False | True |
+| Ensembl | [Link](https://ensembl.org) | Low | False | True |
 | Galaxy Project | [Link](https://galaxyproject.org) | Unknown | False | False |
 | NCBI | [Link](https://ncbi.nlm.nih.gov) | Low | False | True |
 | PDB | [Link](https://rcsb.org) | Low | False | True |
