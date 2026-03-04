@@ -1,22 +1,14 @@
 {
-  "generated_at": "2026-03-04T05:20:58.439243",
+  "generated_at": "2026-03-04T13:20:22.949562",
   "pipeline": "research_hub_fetch_sources",
   "parallel_workers": 20,
   "timeout_sec": 8,
   "elapsed_ms": 18019,
   "summary": {
-    "total_sources": 30,
-    "success_count": 23,
-    "failed_count": 7,
-    "success_rate": 76.67,
-    "retry_total": 7,
-    "avg_latency_ms": 2992.13,
-    "max_latency_ms": 18007,
-    "event_count": 1,
-    "last_pipeline": "research_hub_daily_github",
-    "last_fetch_total": 30,
-    "last_fetch_success": 23,
-    "last_fetch_failed": 7
+    "event_count": 2,
+    "last_pipeline": "research_hub_retry_failed",
+    "last_total_retry": 7,
+    "last_recovered": 0
   },
   "by_topic": {
     "deep_learning": {
@@ -55,22 +47,38 @@
           "network_error": 3
         }
       }
-    }
-  ],
-  "latest": {
-    "timestamp": "2026-03-04T05:20:58.439215",
-    "pipeline": "research_hub_daily_github",
-    "notes": "fetch_sources + reproducibility + parallel(index,report) + commit/push",
-    "source_fetch": {
-      "generated_at": "2026-03-04T05:20:58.264722",
-      "elapsed_ms": 18019,
-      "total": 30,
-      "success": 23,
-      "failed": 7,
+    },
+    {
+      "timestamp": "2026-03-04T13:20:22.949404",
+      "pipeline": "research_hub_retry_failed",
+      "workers": 7,
+      "total_retry": 7,
+      "recovered": 0,
+      "still_failed": 7,
+      "retry_total": 7,
       "failure_distribution": {
         "http_error": 4,
         "network_error": 3
-      }
+      },
+      "avg_latency_ms": 8323.0,
+      "max_latency_ms": 17839,
+      "elapsed_ms": 17854
     }
+  ],
+  "latest": {
+    "timestamp": "2026-03-04T13:20:22.949404",
+    "pipeline": "research_hub_retry_failed",
+    "workers": 7,
+    "total_retry": 7,
+    "recovered": 0,
+    "still_failed": 7,
+    "retry_total": 7,
+    "failure_distribution": {
+      "http_error": 4,
+      "network_error": 3
+    },
+    "avg_latency_ms": 8323.0,
+    "max_latency_ms": 17839,
+    "elapsed_ms": 17854
   }
 }
