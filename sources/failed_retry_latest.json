@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-03-04T13:34:26.768784",
+  "timestamp": "2026-03-04T13:34:48.504080",
   "workers": 7,
   "total_retry": 7,
   "recovered": 0,
   "still_failed": 7,
-  "elapsed_ms": 18367,
+  "elapsed_ms": 18020,
   "results": [
     {
       "name": "CS Theory StackExchange",
@@ -15,9 +15,9 @@
         "error": "HTTP 403",
         "error_type": "http_error",
         "attempts": 2,
-        "elapsed_ms": 1284
+        "elapsed_ms": 1301
       },
-      "checked_at": "2026-03-04T13:34:09.691129"
+      "checked_at": "2026-03-04T13:34:31.787606"
     },
     {
       "name": "Hugging Face",
@@ -28,9 +28,9 @@
         "error": "<urlopen error [Errno 101] Network is unreachable>",
         "error_type": "network_error",
         "attempts": 2,
-        "elapsed_ms": 16370
+        "elapsed_ms": 16364
       },
-      "checked_at": "2026-03-04T13:34:24.780011"
+      "checked_at": "2026-03-04T13:34:46.851173"
     },
     {
       "name": "Kaggle Genomics",
@@ -41,9 +41,9 @@
         "error": "HTTP 404",
         "error_type": "http_error",
         "attempts": 2,
-        "elapsed_ms": 2834
+        "elapsed_ms": 2451
       },
-      "checked_at": "2026-03-04T13:34:11.244123"
+      "checked_at": "2026-03-04T13:34:32.938149"
     },
     {
       "name": "OpenAI Research",
@@ -54,9 +54,9 @@
         "error": "HTTP 403",
         "error_type": "http_error",
         "attempts": 2,
-        "elapsed_ms": 891
+        "elapsed_ms": 894
       },
-      "checked_at": "2026-03-04T13:34:09.294140"
+      "checked_at": "2026-03-04T13:34:31.379021"
     },
     {
       "name": "Papers With Code",
@@ -67,9 +67,9 @@
         "error": "<urlopen error [Errno 101] Network is unreachable>",
         "error_type": "network_error",
         "attempts": 2,
-        "elapsed_ms": 18356
+        "elapsed_ms": 18014
       },
-      "checked_at": "2026-03-04T13:34:26.767713"
+      "checked_at": "2026-03-04T13:34:48.503135"
     },
     {
       "name": "Stanford Encyclopedia of Philosophy - Logic",
@@ -80,9 +80,9 @@
         "error": "HTTP 404",
         "error_type": "http_error",
         "attempts": 2,
-        "elapsed_ms": 2701
+        "elapsed_ms": 2695
       },
-      "checked_at": "2026-03-04T13:34:11.106652"
+      "checked_at": "2026-03-04T13:34:33.181478"
     },
     {
       "name": "TensorFlow",
@@ -93,9 +93,9 @@
         "error": "<urlopen error [Errno 101] Network is unreachable>",
         "error_type": "network_error",
         "attempts": 2,
-        "elapsed_ms": 16369
+        "elapsed_ms": 16367
       },
-      "checked_at": "2026-03-04T13:34:24.780237"
+      "checked_at": "2026-03-04T13:34:46.855366"
     }
   ]
 }
