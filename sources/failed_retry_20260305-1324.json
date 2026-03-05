@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-03-05T13:24:49.108117",
+  "timestamp": "2026-03-05T13:24:58.730351",
   "workers": 7,
   "total_retry": 7,
   "recovered": 0,
   "still_failed": 7,
-  "elapsed_ms": 19742,
+  "elapsed_ms": 17906,
   "results": [
     {
       "name": "CS Theory StackExchange",
@@ -15,9 +15,9 @@
         "error": "HTTP 403",
         "error_type": "http_error",
         "attempts": 2,
-        "elapsed_ms": 1267
+        "elapsed_ms": 1608
       },
-      "checked_at": "2026-03-05T13:24:30.639608"
+      "checked_at": "2026-03-05T13:24:42.441466"
     },
     {
       "name": "Hugging Face",
@@ -28,9 +28,9 @@
         "error": "<urlopen error [Errno 101] Network is unreachable>",
         "error_type": "network_error",
         "attempts": 2,
-        "elapsed_ms": 16362
+        "elapsed_ms": 16368
       },
-      "checked_at": "2026-03-05T13:24:45.736855"
+      "checked_at": "2026-03-05T13:24:57.203055"
     },
     {
       "name": "Kaggle Genomics",
@@ -41,9 +41,9 @@
         "error": "HTTP 404",
         "error_type": "http_error",
         "attempts": 2,
-        "elapsed_ms": 2555
+        "elapsed_ms": 2143
       },
-      "checked_at": "2026-03-05T13:24:31.928207"
+      "checked_at": "2026-03-05T13:24:42.977072"
     },
     {
       "name": "OpenAI Research",
@@ -54,9 +54,9 @@
         "error": "HTTP 403",
         "error_type": "http_error",
         "attempts": 2,
-        "elapsed_ms": 908
+        "elapsed_ms": 900
       },
-      "checked_at": "2026-03-05T13:24:30.274408"
+      "checked_at": "2026-03-05T13:24:41.726020"
     },
     {
       "name": "Papers With Code",
@@ -64,12 +64,12 @@
       "previous_reason": "<urlopen error [Errno 101] Network is unreachable>",
       "retry": {
         "ok": false,
-        "error": "<urlopen error _ssl.c:990: The handshake operation timed out>",
+        "error": "<urlopen error [Errno 101] Network is unreachable>",
         "error_type": "network_error",
         "attempts": 2,
-        "elapsed_ms": 19731
+        "elapsed_ms": 17892
       },
-      "checked_at": "2026-03-05T13:24:49.107080"
+      "checked_at": "2026-03-05T13:24:58.729218"
     },
     {
       "name": "Stanford Encyclopedia of Philosophy - Logic",
@@ -80,9 +80,9 @@
         "error": "HTTP 404",
         "error_type": "http_error",
         "attempts": 2,
-        "elapsed_ms": 3673
+        "elapsed_ms": 3498
       },
-      "checked_at": "2026-03-05T13:24:33.044460"
+      "checked_at": "2026-03-05T13:24:44.329642"
     },
     {
       "name": "TensorFlow",
@@ -93,9 +93,9 @@
         "error": "<urlopen error [Errno 101] Network is unreachable>",
         "error_type": "network_error",
         "attempts": 2,
-        "elapsed_ms": 16368
+        "elapsed_ms": 16364
       },
-      "checked_at": "2026-03-05T13:24:45.743108"
+      "checked_at": "2026-03-05T13:24:57.199808"
     }
   ]
 }
