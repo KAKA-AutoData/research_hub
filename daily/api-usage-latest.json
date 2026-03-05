@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-05T13:23:23.777023",
+  "generated_at": "2026-03-05T13:23:35.765296",
   "events": [
     {
       "timestamp": "2026-03-05T13:20:29.969654",
@@ -128,10 +128,26 @@
       "avg_latency_ms": 8596.0,
       "max_latency_ms": 19235,
       "elapsed_ms": 19249
+    },
+    {
+      "timestamp": "2026-03-05T13:23:35.765100",
+      "pipeline": "research_hub_retry_failed",
+      "workers": 7,
+      "total_retry": 7,
+      "recovered": 0,
+      "still_failed": 7,
+      "retry_total": 7,
+      "failure_distribution": {
+        "http_error": 4,
+        "network_error": 3
+      },
+      "avg_latency_ms": 8609.86,
+      "max_latency_ms": 19054,
+      "elapsed_ms": 19066
     }
   ],
   "latest": {
-    "timestamp": "2026-03-05T13:23:23.776821",
+    "timestamp": "2026-03-05T13:23:35.765100",
     "pipeline": "research_hub_retry_failed",
     "workers": 7,
     "total_retry": 7,
@@ -142,12 +158,12 @@
       "http_error": 4,
       "network_error": 3
     },
-    "avg_latency_ms": 8596.0,
-    "max_latency_ms": 19235,
-    "elapsed_ms": 19249
+    "avg_latency_ms": 8609.86,
+    "max_latency_ms": 19054,
+    "elapsed_ms": 19066
   },
   "summary": {
-    "event_count": 8,
+    "event_count": 9,
     "last_pipeline": "research_hub_retry_failed",
     "last_total_retry": 7,
     "last_recovered": 0
