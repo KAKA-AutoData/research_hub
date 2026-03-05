@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-03-05T13:25:35.704117",
+  "timestamp": "2026-03-05T13:25:47.639939",
   "workers": 7,
   "total_retry": 7,
   "recovered": 0,
   "still_failed": 7,
-  "elapsed_ms": 17907,
+  "elapsed_ms": 17799,
   "results": [
     {
       "name": "CS Theory StackExchange",
@@ -15,9 +15,9 @@
         "error": "HTTP 403",
         "error_type": "http_error",
         "attempts": 2,
-        "elapsed_ms": 1469
+        "elapsed_ms": 1866
       },
-      "checked_at": "2026-03-05T13:25:19.269164"
+      "checked_at": "2026-03-05T13:25:31.709726"
     },
     {
       "name": "Hugging Face",
@@ -30,7 +30,7 @@
         "attempts": 2,
         "elapsed_ms": 16375
       },
-      "checked_at": "2026-03-05T13:25:34.175371"
+      "checked_at": "2026-03-05T13:25:46.220115"
     },
     {
       "name": "Kaggle Genomics",
@@ -41,9 +41,9 @@
         "error": "HTTP 404",
         "error_type": "http_error",
         "attempts": 2,
-        "elapsed_ms": 2165
+        "elapsed_ms": 3654
       },
-      "checked_at": "2026-03-05T13:25:19.965254"
+      "checked_at": "2026-03-05T13:25:33.498988"
     },
     {
       "name": "OpenAI Research",
@@ -54,9 +54,9 @@
         "error": "HTTP 403",
         "error_type": "http_error",
         "attempts": 2,
-        "elapsed_ms": 913
+        "elapsed_ms": 899
       },
-      "checked_at": "2026-03-05T13:25:18.710511"
+      "checked_at": "2026-03-05T13:25:30.741119"
     },
     {
       "name": "Papers With Code",
@@ -67,9 +67,9 @@
         "error": "<urlopen error [Errno 101] Network is unreachable>",
         "error_type": "network_error",
         "attempts": 2,
-        "elapsed_ms": 17902
+        "elapsed_ms": 17793
       },
-      "checked_at": "2026-03-05T13:25:35.703172"
+      "checked_at": "2026-03-05T13:25:47.639141"
     },
     {
       "name": "Stanford Encyclopedia of Philosophy - Logic",
@@ -80,9 +80,9 @@
         "error": "HTTP 404",
         "error_type": "http_error",
         "attempts": 2,
-        "elapsed_ms": 1749
+        "elapsed_ms": 2111
       },
-      "checked_at": "2026-03-05T13:25:19.548105"
+      "checked_at": "2026-03-05T13:25:31.954975"
     },
     {
       "name": "TensorFlow",
@@ -95,7 +95,7 @@
         "attempts": 2,
         "elapsed_ms": 16374
       },
-      "checked_at": "2026-03-05T13:25:34.175081"
+      "checked_at": "2026-03-05T13:25:46.219776"
     }
   ]
 }
