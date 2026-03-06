@@ -5,13 +5,13 @@
       "url": "https://arxiv.org/list/cs.LG/recent",
       "description": "Machine learning papers",
       "topic": "deep_learning",
-      "date_added": "2026-03-04T05:20:40.422582",
+      "date_added": "2026-03-07T03:40:06.336429",
       "accessibility": {
         "accessible": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_ms": 167,
-        "last_attempt_ms": 167,
+        "elapsed_ms": 181,
+        "last_attempt_ms": 181,
         "error_type": ""
       }
     },
@@ -20,13 +20,13 @@
       "url": "https://deepmind.google/research",
       "description": "DeepMind research",
       "topic": "deep_learning",
-      "date_added": "2026-03-04T05:20:41.680288",
+      "date_added": "2026-03-07T03:40:07.550457",
       "accessibility": {
         "accessible": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_ms": 1423,
-        "last_attempt_ms": 1423,
+        "elapsed_ms": 1394,
+        "last_attempt_ms": 1394,
         "error_type": ""
       }
     },
@@ -35,13 +35,13 @@
       "url": "https://distill.pub",
       "description": "ML explanations",
       "topic": "deep_learning",
-      "date_added": "2026-03-04T05:20:40.515452",
+      "date_added": "2026-03-07T03:40:06.422914",
       "accessibility": {
         "accessible": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_ms": 258,
-        "last_attempt_ms": 258,
+        "elapsed_ms": 265,
+        "last_attempt_ms": 265,
         "error_type": ""
       }
     },
@@ -50,13 +50,13 @@
       "url": "https://fast.ai",
       "description": "Practical deep learning",
       "topic": "deep_learning",
-      "date_added": "2026-03-04T05:20:41.936958",
+      "date_added": "2026-03-07T03:40:08.845695",
       "accessibility": {
         "accessible": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_ms": 1679,
-        "last_attempt_ms": 1679,
+        "elapsed_ms": 2687,
+        "last_attempt_ms": 2687,
         "error_type": ""
       }
     },
@@ -65,12 +65,12 @@
       "url": "https://huggingface.co",
       "description": "AI model repository",
       "topic": "deep_learning",
-      "date_added": "2026-03-04T05:20:56.635279",
+      "date_added": "2026-03-07T03:40:22.610694",
       "accessibility": {
         "accessible": false,
         "status": null,
         "attempts": 2,
-        "elapsed_ms": 16386,
+        "elapsed_ms": 16457,
         "last_attempt_ms": 0,
         "error": "<urlopen error [Errno 101] Network is unreachable>",
         "error_type": "network_error"
@@ -81,13 +81,13 @@
       "url": "https://introtodeeplearning.com",
       "description": "MIT deep learning course",
       "topic": "deep_learning",
-      "date_added": "2026-03-04T05:20:40.874629",
+      "date_added": "2026-03-07T03:40:06.836358",
       "accessibility": {
         "accessible": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_ms": 616,
-        "last_attempt_ms": 616,
+        "elapsed_ms": 676,
+        "last_attempt_ms": 676,
         "error_type": ""
       }
     },
@@ -96,12 +96,12 @@
       "url": "https://openai.com/research",
       "description": "OpenAI publications",
       "topic": "deep_learning",
-      "date_added": "2026-03-04T05:20:41.157686",
+      "date_added": "2026-03-07T03:40:07.085510",
       "accessibility": {
         "accessible": false,
         "status": null,
         "attempts": 2,
-        "elapsed_ms": 902,
+        "elapsed_ms": 930,
         "last_attempt_ms": 0,
         "error": "HTTP 403",
         "error_type": "http_error"
@@ -112,12 +112,12 @@
       "url": "https://paperswithcode.com",
       "description": "ML papers with code",
       "topic": "deep_learning",
-      "date_added": "2026-03-04T05:20:58.260656",
+      "date_added": "2026-03-07T03:40:24.067018",
       "accessibility": {
         "accessible": false,
         "status": null,
         "attempts": 2,
-        "elapsed_ms": 18007,
+        "elapsed_ms": 17913,
         "last_attempt_ms": 0,
         "error": "<urlopen error [Errno 101] Network is unreachable>",
         "error_type": "network_error"
@@ -128,13 +128,13 @@
       "url": "https://pytorch.org",
       "description": "Deep learning framework",
       "topic": "deep_learning",
-      "date_added": "2026-03-04T05:20:40.493882",
+      "date_added": "2026-03-07T03:40:06.544761",
       "accessibility": {
         "accessible": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_ms": 248,
-        "last_attempt_ms": 248,
+        "elapsed_ms": 397,
+        "last_attempt_ms": 397,
         "error_type": ""
       }
     },
@@ -143,12 +143,12 @@
       "url": "https://tensorflow.org",
       "description": "ML platform by Google",
       "topic": "deep_learning",
-      "date_added": "2026-03-04T05:20:56.955154",
+      "date_added": "2026-03-07T03:40:22.839171",
       "accessibility": {
         "accessible": false,
         "status": null,
         "attempts": 2,
-        "elapsed_ms": 16708,
+        "elapsed_ms": 16687,
         "last_attempt_ms": 0,
         "error": "<urlopen error [Errno 101] Network is unreachable>",
         "error_type": "network_error"
@@ -161,13 +161,13 @@
       "url": "https://internationalgenome.org",
       "description": "Human genetic variation",
       "topic": "bioinformatics",
-      "date_added": "2026-03-04T05:20:41.389171",
+      "date_added": "2026-03-07T03:40:07.311456",
       "accessibility": {
         "accessible": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_ms": 1122,
-        "last_attempt_ms": 1122,
+        "elapsed_ms": 1144,
+        "last_attempt_ms": 1144,
         "error_type": ""
       }
     },
@@ -176,13 +176,13 @@
       "url": "https://bioconductor.org",
       "description": "Bioinformatics packages",
       "topic": "bioinformatics",
-      "date_added": "2026-03-04T05:20:40.974391",
+      "date_added": "2026-03-07T03:40:06.822626",
       "accessibility": {
         "accessible": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_ms": 712,
-        "last_attempt_ms": 712,
+        "elapsed_ms": 659,
+        "last_attempt_ms": 659,
         "error_type": ""
       }
     },
@@ -191,13 +191,13 @@
       "url": "https://broadinstitute.org",
       "description": "Genomics research",
       "topic": "bioinformatics",
-      "date_added": "2026-03-04T05:20:41.327534",
+      "date_added": "2026-03-07T03:40:07.501527",
       "accessibility": {
         "accessible": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_ms": 1062,
-        "last_attempt_ms": 1062,
+        "elapsed_ms": 1336,
+        "last_attempt_ms": 1336,
         "error_type": ""
       }
     },
@@ -206,13 +206,13 @@
       "url": "https://ebi.ac.uk",
       "description": "European Bioinformatics Institute",
       "topic": "bioinformatics",
-      "date_added": "2026-03-04T05:20:42.456389",
+      "date_added": "2026-03-07T03:40:07.998803",
       "accessibility": {
         "accessible": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_ms": 2190,
-        "last_attempt_ms": 2190,
+        "elapsed_ms": 1832,
+        "last_attempt_ms": 1832,
         "error_type": ""
       }
     },
@@ -221,14 +221,15 @@
       "url": "https://ensembl.org",
       "description": "Genome browser",
       "topic": "bioinformatics",
-      "date_added": "2026-03-04T05:20:44.997161",
+      "date_added": "2026-03-07T03:40:28.221605",
       "accessibility": {
-        "accessible": true,
-        "status": 200,
-        "attempts": 1,
-        "elapsed_ms": 4737,
-        "last_attempt_ms": 4737,
-        "error_type": ""
+        "accessible": false,
+        "status": null,
+        "attempts": 2,
+        "elapsed_ms": 22060,
+        "last_attempt_ms": 0,
+        "error": "The read operation timed out",
+        "error_type": "network_error"
       }
     },
     {
@@ -236,13 +237,13 @@
       "url": "https://galaxyproject.org",
       "description": "Data analysis platform",
       "topic": "bioinformatics",
-      "date_added": "2026-03-04T05:20:40.903842",
+      "date_added": "2026-03-07T03:40:07.234651",
       "accessibility": {
         "accessible": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_ms": 640,
-        "last_attempt_ms": 640,
+        "elapsed_ms": 1070,
+        "last_attempt_ms": 1070,
         "error_type": ""
       }
     },
@@ -251,12 +252,12 @@
       "url": "https://kaggle.com/datasets?tags=13204-genomics",
       "description": "Genomic datasets",
       "topic": "bioinformatics",
-      "date_added": "2026-03-04T05:20:42.413710",
+      "date_added": "2026-03-07T03:40:08.603813",
       "accessibility": {
         "accessible": false,
         "status": null,
         "attempts": 2,
-        "elapsed_ms": 2149,
+        "elapsed_ms": 2439,
         "last_attempt_ms": 0,
         "error": "HTTP 404",
         "error_type": "http_error"
@@ -267,13 +268,13 @@
       "url": "https://ncbi.nlm.nih.gov",
       "description": "National Center for Biotechnology",
       "topic": "bioinformatics",
-      "date_added": "2026-03-04T05:20:42.092155",
+      "date_added": "2026-03-07T03:40:07.913142",
       "accessibility": {
         "accessible": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_ms": 1833,
-        "last_attempt_ms": 1833,
+        "elapsed_ms": 1753,
+        "last_attempt_ms": 1753,
         "error_type": ""
       }
     },
@@ -282,13 +283,13 @@
       "url": "https://rcsb.org",
       "description": "Protein Data Bank",
       "topic": "bioinformatics",
-      "date_added": "2026-03-04T05:20:42.917180",
+      "date_added": "2026-03-07T03:40:08.653717",
       "accessibility": {
         "accessible": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_ms": 2656,
-        "last_attempt_ms": 2656,
+        "elapsed_ms": 2491,
+        "last_attempt_ms": 2491,
         "error_type": ""
       }
     },
@@ -297,13 +298,13 @@
       "url": "https://uniprot.org",
       "description": "Protein knowledgebase",
       "topic": "bioinformatics",
-      "date_added": "2026-03-04T05:20:41.805121",
+      "date_added": "2026-03-07T03:40:07.931755",
       "accessibility": {
         "accessible": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_ms": 1544,
-        "last_attempt_ms": 1544,
+        "elapsed_ms": 1770,
+        "last_attempt_ms": 1770,
         "error_type": ""
       }
     }
@@ -314,12 +315,12 @@
       "url": "https://cstheory.stackexchange.com",
       "description": "Theory Q&A",
       "topic": "computational_theory",
-      "date_added": "2026-03-04T05:20:42.322729",
+      "date_added": "2026-03-07T03:40:08.395283",
       "accessibility": {
         "accessible": false,
         "status": null,
         "attempts": 2,
-        "elapsed_ms": 1348,
+        "elapsed_ms": 1309,
         "last_attempt_ms": 0,
         "error": "HTTP 403",
         "error_type": "http_error"
@@ -330,13 +331,13 @@
       "url": "https://complexityzoo.net",
       "description": "Complexity classes reference",
       "topic": "computational_theory",
-      "date_added": "2026-03-04T05:20:42.090534",
+      "date_added": "2026-03-07T03:40:08.014711",
       "accessibility": {
         "accessible": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_ms": 1667,
-        "last_attempt_ms": 1667,
+        "elapsed_ms": 1677,
+        "last_attempt_ms": 1677,
         "error_type": ""
       }
     },
@@ -345,13 +346,13 @@
       "url": "https://coq.inria.fr",
       "description": "Formal proof management",
       "topic": "computational_theory",
-      "date_added": "2026-03-04T05:20:44.025993",
+      "date_added": "2026-03-07T03:40:09.646982",
       "accessibility": {
         "accessible": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_ms": 2636,
-        "last_attempt_ms": 2636,
+        "elapsed_ms": 2144,
+        "last_attempt_ms": 2144,
         "error_type": ""
       }
     },
@@ -360,13 +361,13 @@
       "url": "https://eccc.weizmann.ac.il",
       "description": "Electronic Colloquium on Computational Complexity",
       "topic": "computational_theory",
-      "date_added": "2026-03-04T05:20:42.913709",
+      "date_added": "2026-03-07T03:40:08.873203",
       "accessibility": {
         "accessible": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_ms": 2009,
-        "last_attempt_ms": 2009,
+        "elapsed_ms": 2036,
+        "last_attempt_ms": 2036,
         "error_type": ""
       }
     },
@@ -375,13 +376,13 @@
       "url": "https://isabelle.in.tum.de",
       "description": "Proof assistant",
       "topic": "computational_theory",
-      "date_added": "2026-03-04T05:20:42.377265",
+      "date_added": "2026-03-07T03:40:08.118164",
       "accessibility": {
         "accessible": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_ms": 696,
-        "last_attempt_ms": 696,
+        "elapsed_ms": 567,
+        "last_attempt_ms": 567,
         "error_type": ""
       }
     },
@@ -390,13 +391,13 @@
       "url": "https://plato.stanford.edu/entries/lambda-calculus",
       "description": "Lambda calculus",
       "topic": "computational_theory",
-      "date_added": "2026-03-04T05:20:42.518974",
+      "date_added": "2026-03-07T03:40:08.535382",
       "accessibility": {
         "accessible": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_ms": 1360,
-        "last_attempt_ms": 1360,
+        "elapsed_ms": 1300,
+        "last_attempt_ms": 1300,
         "error_type": ""
       }
     },
@@ -405,13 +406,13 @@
       "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011",
       "description": "Algorithm course",
       "topic": "computational_theory",
-      "date_added": "2026-03-04T05:20:41.836156",
+      "date_added": "2026-03-07T03:40:07.950912",
       "accessibility": {
         "accessible": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_ms": 1320,
-        "last_attempt_ms": 1320,
+        "elapsed_ms": 1405,
+        "last_attempt_ms": 1405,
         "error_type": ""
       }
     },
@@ -420,12 +421,12 @@
       "url": "https://plato.stanford.edu/entries/logic-computational",
       "description": "Computational logic",
       "topic": "computational_theory",
-      "date_added": "2026-03-04T05:20:42.172514",
+      "date_added": "2026-03-07T03:40:08.248258",
       "accessibility": {
         "accessible": false,
         "status": null,
         "attempts": 2,
-        "elapsed_ms": 1678,
+        "elapsed_ms": 1825,
         "last_attempt_ms": 0,
         "error": "HTTP 404",
         "error_type": "http_error"
@@ -436,13 +437,13 @@
       "url": "https://www-cs-faculty.stanford.edu/~knuth/taocp.html",
       "description": "Knuth's algorithms",
       "topic": "computational_theory",
-      "date_added": "2026-03-04T05:20:42.060046",
+      "date_added": "2026-03-07T03:40:07.816289",
       "accessibility": {
         "accessible": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_ms": 1184,
-        "last_attempt_ms": 1184,
+        "elapsed_ms": 993,
+        "last_attempt_ms": 993,
         "error_type": ""
       }
     },
@@ -451,13 +452,13 @@
       "url": "https://homotopytypetheory.org",
       "description": "Homotopy type theory",
       "topic": "computational_theory",
-      "date_added": "2026-03-04T05:20:42.155968",
+      "date_added": "2026-03-07T03:40:08.121950",
       "accessibility": {
         "accessible": true,
         "status": 200,
         "attempts": 1,
-        "elapsed_ms": 827,
-        "last_attempt_ms": 827,
+        "elapsed_ms": 810,
+        "last_attempt_ms": 810,
         "error_type": ""
       }
     }

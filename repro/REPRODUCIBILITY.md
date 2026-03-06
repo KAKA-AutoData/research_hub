@@ -1,12 +1,12 @@
 # Reproducibility Analysis Report
 
-Generated: 2026-03-04T05:20:58.326946
+Generated: 2026-03-07T03:40:28.308591
 
 ## Summary
 
 | Barrier Level | Count |
 |--------------|-------|
-| Low (Easy to reproduce) | 10 |
+| Low (Easy to reproduce) | 9 |
 | Medium (Some effort required) | 2 |
 | High (Significant barriers) | 1 |
 | Unknown | 10 |
@@ -82,13 +82,6 @@ Generated: 2026-03-04T05:20:58.326946
 
 **EBI**
 - URL: https://ebi.ac.uk
-- Code Available: False
-- Data Public: True
-- Run Barrier: Low
-- Risks: Web API/service, not downloadable code, May have rate limits
-
-**Ensembl**
-- URL: https://ensembl.org
 - Code Available: False
 - Data Public: True
 - Run Barrier: Low

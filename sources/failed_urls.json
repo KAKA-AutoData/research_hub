@@ -5,7 +5,7 @@
     "reason": "HTTP 403",
     "error_type": "http_error",
     "attempts": 2,
-    "elapsed_ms": 902
+    "elapsed_ms": 930
   },
   {
     "name": "Stanford Encyclopedia of Philosophy - Logic",
@@ -13,7 +13,7 @@
     "reason": "HTTP 404",
     "error_type": "http_error",
     "attempts": 2,
-    "elapsed_ms": 1678
+    "elapsed_ms": 1825
   },
   {
     "name": "CS Theory StackExchange",
@@ -21,7 +21,7 @@
     "reason": "HTTP 403",
     "error_type": "http_error",
     "attempts": 2,
-    "elapsed_ms": 1348
+    "elapsed_ms": 1309
   },
   {
     "name": "Kaggle Genomics",
@@ -29,7 +29,7 @@
     "reason": "HTTP 404",
     "error_type": "http_error",
     "attempts": 2,
-    "elapsed_ms": 2149
+    "elapsed_ms": 2439
   },
   {
     "name": "Hugging Face",
@@ -37,7 +37,7 @@
     "reason": "<urlopen error [Errno 101] Network is unreachable>",
     "error_type": "network_error",
     "attempts": 2,
-    "elapsed_ms": 16386
+    "elapsed_ms": 16457
   },
   {
     "name": "TensorFlow",
@@ -45,7 +45,7 @@
     "reason": "<urlopen error [Errno 101] Network is unreachable>",
     "error_type": "network_error",
     "attempts": 2,
-    "elapsed_ms": 16708
+    "elapsed_ms": 16687
   },
   {
     "name": "Papers With Code",
@@ -53,6 +53,14 @@
     "reason": "<urlopen error [Errno 101] Network is unreachable>",
     "error_type": "network_error",
     "attempts": 2,
-    "elapsed_ms": 18007
+    "elapsed_ms": 17913
+  },
+  {
+    "name": "Ensembl",
+    "url": "https://ensembl.org",
+    "reason": "The read operation timed out",
+    "error_type": "network_error",
+    "attempts": 2,
+    "elapsed_ms": 22060
   }
 ]
