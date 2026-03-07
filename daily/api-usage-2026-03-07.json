@@ -1,22 +1,14 @@
 {
-  "generated_at": "2026-03-07T03:40:28.427252",
+  "generated_at": "2026-03-07T13:20:28.970158",
   "pipeline": "research_hub_fetch_sources",
   "parallel_workers": 20,
   "timeout_sec": 8,
   "elapsed_ms": 22084,
   "summary": {
-    "total_sources": 30,
-    "success_count": 22,
-    "failed_count": 8,
-    "success_rate": 73.33,
-    "retry_total": 8,
-    "avg_latency_ms": 3606.9,
-    "max_latency_ms": 22060,
-    "event_count": 1,
-    "last_pipeline": "research_hub_daily_github",
-    "last_fetch_total": 30,
-    "last_fetch_success": 22,
-    "last_fetch_failed": 8
+    "event_count": 2,
+    "last_pipeline": "research_hub_retry_failed",
+    "last_total_retry": 8,
+    "last_recovered": 0
   },
   "by_topic": {
     "deep_learning": {
@@ -55,22 +47,38 @@
           "network_error": 4
         }
       }
+    },
+    {
+      "timestamp": "2026-03-07T13:20:28.969973",
+      "pipeline": "research_hub_retry_failed",
+      "workers": 8,
+      "total_retry": 8,
+      "recovered": 0,
+      "still_failed": 8,
+      "retry_total": 8,
+      "failure_distribution": {
+        "http_error": 5,
+        "network_error": 3
+      },
+      "avg_latency_ms": 8869.38,
+      "max_latency_ms": 21673,
+      "elapsed_ms": 21687
     }
   ],
   "latest": {
-    "timestamp": "2026-03-07T03:40:28.427226",
-    "pipeline": "research_hub_daily_github",
-    "notes": "fetch_sources + reproducibility + parallel(index,report) + commit/push",
-    "source_fetch": {
-      "generated_at": "2026-03-07T03:40:28.230915",
-      "elapsed_ms": 22084,
-      "total": 30,
-      "success": 22,
-      "failed": 8,
-      "failure_distribution": {
-        "http_error": 4,
-        "network_error": 4
-      }
-    }
+    "timestamp": "2026-03-07T13:20:28.969973",
+    "pipeline": "research_hub_retry_failed",
+    "workers": 8,
+    "total_retry": 8,
+    "recovered": 0,
+    "still_failed": 8,
+    "retry_total": 8,
+    "failure_distribution": {
+      "http_error": 5,
+      "network_error": 3
+    },
+    "avg_latency_ms": 8869.38,
+    "max_latency_ms": 21673,
+    "elapsed_ms": 21687
   }
 }
