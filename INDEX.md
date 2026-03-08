@@ -1,7 +1,7 @@
 # Research Hub Index
 
 > Auto-generated for Codex and human readers  
-> Generated: 2026-03-07 03:40:28
+> Generated: 2026-03-09 03:40:24
 
 ## Quick Stats
 
@@ -13,8 +13,8 @@
 
 ## Topics
 
-- **Deep Learning**: 6 sources
-- **Bioinformatics**: 8 sources
+- **Deep Learning**: 5 sources
+- **Bioinformatics**: 9 sources
 - **Computational Theory**: 8 sources
 
 ## File Structure
@@ -65,7 +65,6 @@ dl_sources = sources.get('deep_learning', [])
 | Title | URL | Barrier | Code | Data |
 |-------|-----|---------|------|------|
 | ArXiv CS.LG | [Link](https://arxiv.org/list/cs.LG/recent) | Medium-High | Check paper | Check paper |
-| DeepMind | [Link](https://deepmind.google/research) | Medium | Varies | Varies |
 | Distill.pub | [Link](https://distill.pub) | Unknown | False | False |
 | Fast.ai | [Link](https://fast.ai) | Low | True | True |
 | MIT 6.S191 | [Link](https://introtodeeplearning.com) | Unknown | False | False |
@@ -79,6 +78,7 @@ dl_sources = sources.get('deep_learning', [])
 | Bioconductor | [Link](https://bioconductor.org) | Unknown | False | False |
 | Broad Institute | [Link](https://broadinstitute.org) | Medium | Varies | Varies |
 | EBI | [Link](https://ebi.ac.uk) | Low | False | True |
+| Ensembl | [Link](https://ensembl.org) | Low | False | True |
 | Galaxy Project | [Link](https://galaxyproject.org) | Unknown | False | False |
 | NCBI | [Link](https://ncbi.nlm.nih.gov) | Low | False | True |
 | PDB | [Link](https://rcsb.org) | Low | False | True |

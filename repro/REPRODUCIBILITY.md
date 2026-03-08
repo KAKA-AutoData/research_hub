@@ -1,13 +1,13 @@
 # Reproducibility Analysis Report
 
-Generated: 2026-03-07T03:40:28.308591
+Generated: 2026-03-09T03:40:24.321693
 
 ## Summary
 
 | Barrier Level | Count |
 |--------------|-------|
-| Low (Easy to reproduce) | 9 |
-| Medium (Some effort required) | 2 |
+| Low (Easy to reproduce) | 10 |
+| Medium (Some effort required) | 1 |
 | High (Significant barriers) | 1 |
 | Unknown | 10 |
 
@@ -21,13 +21,6 @@ Generated: 2026-03-07T03:40:28.308591
 - Data Public: Check paper
 - Run Barrier: Medium-High
 - Risks: Academic code may be unmaintained, Data access varies by study
-
-**DeepMind**
-- URL: https://deepmind.google/research
-- Code Available: Varies
-- Data Public: Varies
-- Run Barrier: Medium
-- Risks: Corporate research, partial code release
 
 **Distill.pub**
 - URL: https://distill.pub
@@ -82,6 +75,13 @@ Generated: 2026-03-07T03:40:28.308591
 
 **EBI**
 - URL: https://ebi.ac.uk
+- Code Available: False
+- Data Public: True
+- Run Barrier: Low
+- Risks: Web API/service, not downloadable code, May have rate limits
+
+**Ensembl**
+- URL: https://ensembl.org
 - Code Available: False
 - Data Public: True
 - Run Barrier: Low

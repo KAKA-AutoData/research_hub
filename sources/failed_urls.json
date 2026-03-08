@@ -5,15 +5,7 @@
     "reason": "HTTP 403",
     "error_type": "http_error",
     "attempts": 2,
-    "elapsed_ms": 930
-  },
-  {
-    "name": "Stanford Encyclopedia of Philosophy - Logic",
-    "url": "https://plato.stanford.edu/entries/logic-computational",
-    "reason": "HTTP 404",
-    "error_type": "http_error",
-    "attempts": 2,
-    "elapsed_ms": 1825
+    "elapsed_ms": 923
   },
   {
     "name": "CS Theory StackExchange",
@@ -21,7 +13,15 @@
     "reason": "HTTP 403",
     "error_type": "http_error",
     "attempts": 2,
-    "elapsed_ms": 1309
+    "elapsed_ms": 1280
+  },
+  {
+    "name": "Stanford Encyclopedia of Philosophy - Logic",
+    "url": "https://plato.stanford.edu/entries/logic-computational",
+    "reason": "HTTP 404",
+    "error_type": "http_error",
+    "attempts": 2,
+    "elapsed_ms": 1893
   },
   {
     "name": "Kaggle Genomics",
@@ -29,7 +29,7 @@
     "reason": "HTTP 404",
     "error_type": "http_error",
     "attempts": 2,
-    "elapsed_ms": 2439
+    "elapsed_ms": 2565
   },
   {
     "name": "Hugging Face",
@@ -37,7 +37,15 @@
     "reason": "<urlopen error [Errno 101] Network is unreachable>",
     "error_type": "network_error",
     "attempts": 2,
-    "elapsed_ms": 16457
+    "elapsed_ms": 16405
+  },
+  {
+    "name": "DeepMind",
+    "url": "https://deepmind.google/research",
+    "reason": "<urlopen error _ssl.c:990: The handshake operation timed out>",
+    "error_type": "network_error",
+    "attempts": 2,
+    "elapsed_ms": 16731
   },
   {
     "name": "TensorFlow",
@@ -45,7 +53,7 @@
     "reason": "<urlopen error [Errno 101] Network is unreachable>",
     "error_type": "network_error",
     "attempts": 2,
-    "elapsed_ms": 16687
+    "elapsed_ms": 16818
   },
   {
     "name": "Papers With Code",
@@ -53,14 +61,6 @@
     "reason": "<urlopen error [Errno 101] Network is unreachable>",
     "error_type": "network_error",
     "attempts": 2,
-    "elapsed_ms": 17913
-  },
-  {
-    "name": "Ensembl",
-    "url": "https://ensembl.org",
-    "reason": "The read operation timed out",
-    "error_type": "network_error",
-    "attempts": 2,
-    "elapsed_ms": 22060
+    "elapsed_ms": 17905
   }
 ]
