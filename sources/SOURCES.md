@@ -1,13 +1,13 @@
 # Research Sources Database
 
-Generated: 2026-03-09T03:40:24.248785
+Generated: 2026-03-17T00:54:47.221512
 
 ## Deep Learning
 
-*Accessible: 5/10*
+*Accessible: 6/10*
 
 - ✅ [ArXiv CS.LG](https://arxiv.org/list/cs.LG/recent) - Machine learning papers
-- ❌ [DeepMind](https://deepmind.google/research) - DeepMind research
+- ✅ [DeepMind](https://deepmind.google/research) - DeepMind research
 - ✅ [Distill.pub](https://distill.pub) - ML explanations
 - ✅ [Fast.ai](https://fast.ai) - Practical deep learning
 - ❌ [Hugging Face](https://huggingface.co) - AI model repository
@@ -49,4 +49,4 @@ Generated: 2026-03-09T03:40:24.248785
 
 
 ---
-**Summary**: 22 accessible, 8 failed
+**Summary**: 23 accessible, 7 failed

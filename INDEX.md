@@ -1,19 +1,19 @@
 # Research Hub Index
 
 > Auto-generated for Codex and human readers  
-> Generated: 2026-03-09 03:40:24
+> Generated: 2026-03-17 00:54:47
 
 ## Quick Stats
 
 | Metric | Value |
 |--------|-------|
-| Total Sources | 22 |
+| Total Sources | 23 |
 | Topics | 3 |
-| Accessible | 22 |
+| Accessible | 23 |
 
 ## Topics
 
-- **Deep Learning**: 5 sources
+- **Deep Learning**: 6 sources
 - **Bioinformatics**: 9 sources
 - **Computational Theory**: 8 sources
 
@@ -65,6 +65,7 @@ dl_sources = sources.get('deep_learning', [])
 | Title | URL | Barrier | Code | Data |
 |-------|-----|---------|------|------|
 | ArXiv CS.LG | [Link](https://arxiv.org/list/cs.LG/recent) | Medium-High | Check paper | Check paper |
+| DeepMind | [Link](https://deepmind.google/research) | Medium | Varies | Varies |
 | Distill.pub | [Link](https://distill.pub) | Unknown | False | False |
 | Fast.ai | [Link](https://fast.ai) | Low | True | True |
 | MIT 6.S191 | [Link](https://introtodeeplearning.com) | Unknown | False | False |
